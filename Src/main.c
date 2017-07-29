@@ -300,6 +300,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	{
 	HAL_UART_Transmit(&huart2,&tmp,1,10);
 	}
+
+	//first comment for git
+
 	else if(0x40004400 == huart -> Instance)
 	{
 		HAL_UART_Transmit(&huart6,&tmp,1,10);
